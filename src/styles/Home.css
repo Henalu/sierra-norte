@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-around;
     transition: all 300ms;
+    z-index: 5;
 }
 
 #chatdeskpot:hover{

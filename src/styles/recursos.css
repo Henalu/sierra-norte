@@ -27,6 +27,10 @@
     margin-top: 0;
 }
 
+.map{
+    z-index: 1;
+}
+
 @media screen and (min-device-width: 759px) {
     .desc {
         display: flex;

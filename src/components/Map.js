@@ -1,10 +1,9 @@
-import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
+import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 import React from 'react';
 import 'leaflet/dist/leaflet.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import L from 'leaflet';
 import lugaresdf from "./df_coordenadas.json"
-import img from "../img/Cruz Roja.png"
 //import Marker from 'react-leaflet-enhanced-marker';
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -32,16 +31,7 @@ function Map(props) {
         }
         setLugares(lugares2)
         setFirstTime(false)
-    }/* 
-
-    /* fetch("./df_coordenadas.json")
-        .then((res) => console.log(res))
-        .then((res) => {
-            console.log(res);
-            setLugares(res);
-            console.log(Object.keys(res));
-        });
-}, []) */
+    }
 
     const iconAzul = new L.Icon({
         iconUrl: require('../img/chinchetaazul.png'),
@@ -89,8 +79,7 @@ function Map(props) {
     }
 
     return (
-        <div>
-
+        <div className='map'>
             <MapContainer center={[40.94781685287562, -3.648706263450153]} zoom={10} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
