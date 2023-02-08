@@ -1,0 +1,41 @@
+.apartados2 {
+    -webkit-text-stroke: thin;
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    display: flex;
+}
+.apartados2 p {
+    border-bottom: 5px solid #E20613;
+    width: fit-content;
+}
+
+.apartados2.ultimo {
+    margin-bottom: 60px;
+}
+
+.desc {
+    display: none;
+    margin-left: 64px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+@media screen and (min-device-width: 759px) {
+    .desc {
+        display: flex;
+    }
+    .apartados2.ultimo {
+        margin-bottom: 0px;
+    }
+
+    .desc.ultimo {
+        margin-bottom: 149px;
+    }
+}
